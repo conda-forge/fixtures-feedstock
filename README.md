@@ -11,6 +11,18 @@ Summary: Fixtures, reusable state for writing clean tests and more.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fixtures-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fixtures-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/fixtures-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fixtures-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/fixtures-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/fixtures-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fixtures/badges/version.svg)](https://anaconda.org/conda-forge/fixtures)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fixtures/badges/downloads.svg)](https://anaconda.org/conda-forge/fixtures)
+
 Installing fixtures
 ===================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `fixtures` available on your platf
 ```
 conda search fixtures --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fixtures-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fixtures-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/fixtures-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fixtures-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/fixtures-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/fixtures-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fixtures/badges/version.svg)](https://anaconda.org/conda-forge/fixtures)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fixtures/badges/downloads.svg)](https://anaconda.org/conda-forge/fixtures)
 
 
 Updating fixtures-feedstock
