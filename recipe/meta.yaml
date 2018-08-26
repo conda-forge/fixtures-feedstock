@@ -3,25 +3,24 @@
 {% set bundle = "tar.gz" %}
 {% set hash = "sha256" %}
 {% set hash_val = "fcf0d60234f1544da717a9738325812de1f42c2fa085e2d9252d8fff5712b2ef" %}
-{% set build = 0 %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash }}: {{ hash_val }}
 
 build:
-  number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - pbr >=0.11
 
   run:
