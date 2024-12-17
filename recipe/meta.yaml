@@ -13,24 +13,26 @@ source:
   {{ hash }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - pip
     - pbr >=0.11
 
   run:
-    - python
+    - python >={{ python_min }}
     - extras
     - pbr >=0.11
     - six
     - testtools >=0.9.22
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - fixtures
     - fixtures.callmany
