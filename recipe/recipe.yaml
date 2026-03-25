@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "4.3.1"
+  version: "4.3.2"
 
 package:
   name: fixtures
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fixtures/fixtures-${{ version }}.tar.gz
-  sha256: 88cdf089784b84f931a1e32ad3492c4ae707f862459be22020e9ffe4aa1e5823
+  sha256: b7db64014732513f23d12b0c49ae527ba0c0c1f2667ec97d9136d67157ebce5d
 
 build:
   number: 0
